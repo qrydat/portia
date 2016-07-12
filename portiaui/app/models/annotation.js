@@ -16,6 +16,9 @@ export default DS.Model.extend({
     attribute: DS.attr('string'),
     tagid: DS.attr('string'),
     required: DS.attr('boolean'),
+    repeated: DS.attr('boolean', {
+        defaultValue: false
+    }),
     ignore: DS.attr('boolean'),
     ignoreBeneath: DS.attr('boolean'),
     variant: DS.attr('number'),
